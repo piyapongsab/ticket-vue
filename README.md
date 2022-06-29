@@ -1,2 +1,2 @@
-# tivket-vue
+# ticket-vue
 ระบบจองตั๋ว
