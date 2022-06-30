@@ -12,7 +12,6 @@ const state = Object.assign(getDefaultState());
 
 const mutations = make.mutations(state);
 const resetMutation = {
-  // eslint-disable-next-line no-shadow
   resetState(state) {
     Object.assign(state, getDefaultState());
   },

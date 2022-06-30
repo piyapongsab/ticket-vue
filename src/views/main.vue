@@ -1,30 +1,25 @@
 <template>
-    <div>
-        <v-flex md2>
+  <div>
 
-            <v-text-field md2
-              label="Regular"
-            ></v-text-field>
-        </v-flex>
-        <v-select
-            :items="items"
-            label="Outlined style"
-            outlined
-          ></v-select>
-    </div>
+    <v-tabs fixed-tabs background-color="primary">
+      <v-tab> Option </v-tab>
+      <v-tab> Another Selection </v-tab>
+      <v-tab> Items </v-tab>
+      <v-tab> Another Screen </v-tab>
+    </v-tabs>
+  </div>
 </template>
 <script>
-import { sync } from 'vuex-pathify'
+import { sync } from "vuex-pathify";
 
 export default {
   data() {
     return {
-      items: ['Foo', 'Bar', 'Fizz', 'Buzz'],
-
-    }
+      items: ["Foo", "Bar", "Fizz", "Buzz"],
+    };
   },
   computed: {
-    ...sync('*'),
+    ...sync("*"),
   },
-}
+};
 </script>
